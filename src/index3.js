@@ -5,7 +5,6 @@ class Heroi {
         this.idade = idade;
         this.tipo = tipo.toLowerCase();
     }
-
     atacar() {
         let ataque;
         if (this.tipo === "mago") {
@@ -32,6 +31,7 @@ const herois = [
     new Heroi("Hattori", 22, "Ninja"),
     new Heroi("Guerreiro Aleatório", 40, "Paladino") // teste de tipo desconhecido
 ];
+
 
 // Fazendo todos atacarem
 herois.forEach(heroi => heroi.atacar());
